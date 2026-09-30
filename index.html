@@ -208,6 +208,12 @@
   .mznote .bell{display:block;text-align:center;font-size:14px;font-weight:900;color:#fff;
     background:#E53935;border-radius:8px;padding:6px 0;margin:-2px -2px 10px;letter-spacing:.5px;}
   .mznote ol{margin:0;padding-left:26px;}
+  .agreebox{margin-top:16px;background:#FFF1DF;border:2.5px solid var(--o2);border-radius:16px;
+    padding:14px 14px 12px;box-shadow:0 4px 12px rgba(255,107,0,.18);}
+  .agreebox .privacy{font-size:13.5px;color:var(--ink);}
+  .agreenote{margin:10px 0 0;padding-top:10px;border-top:1.5px dashed var(--o4);
+    font-size:15.5px;font-weight:800;color:var(--ink);line-height:1.55;}
+  .agreenote b{color:var(--o2);font-weight:900;}
   .mznote li{margin:6px 0;}
   .mznote b{color:#E53935;font-weight:900;}
 
@@ -666,12 +672,17 @@
       </div>
     </div>
 
-    <label class="privacy" style="margin-top:16px;">
+    <!-- 2026-09-30 정용찬님: 「꼭 확인해 주세요」(메리츠 카톡·문자 안내)를 필수 동의 칸과 한 칸으로 합치고,
+         빈 자리(단추 바로 밑)에 「메리츠 화면에서 이 두 가지만 꼭!」을 올림. 백업 index.html.백업_260930_합치기전 -->
+    <div class="agreebox">
+    <label class="privacy" style="margin-top:0;">
       <span class="must" style="margin:0;flex:none;">필수</span>
       <input type="checkbox" id="agree">
       <span>보장분석 상담을 위한 개인정보(연락처·건강정보 포함) 수집·이용에 동의합니다.
       상담 목적 외에는 쓰지 않으며, 상담이 끝나면 파기합니다.</span>
     </label>
+    <p class="agreenote">📱 신청 시 고객님의 휴대폰 <b>본인인증</b>을 위해 <b>[메리츠화재]</b>에서 카카오톡 또는 문자메시지가 발송됩니다.</p>
+    </div>
 
     <!-- 2026-09-07: 빨간 선 하나가 이 단추 테두리를 한 바퀴씩 돈다
          (정용찬님 「신청하기도 테두리에 빨간색 일자 하나 만들어서 한 바퀴 돌아가게」)
@@ -681,9 +692,6 @@
        href="https://msea.meritzfire.com/mblCusReg.do?orgCd=726051080&amp;usg=12"
        rel="noopener"><span class="tx"><b id="mohomBtnTxt">신청하고 상담받기</b></span></a>
     </div>
-
-    <p class="authnote"><span class="bell">꼭 확인해 주세요</span>
-    신청 시 고객님의 휴대폰 <b>본인인증</b>을 위해<br><b>[메리츠화재]</b>에서 카카오톡 또는<br>문자메시지가 발송됩니다.</p>
 
     <div class="mznote"><span class="bell">⚠ 메리츠 화면에서 이 두 가지만 꼭!</span>
       <ol>
